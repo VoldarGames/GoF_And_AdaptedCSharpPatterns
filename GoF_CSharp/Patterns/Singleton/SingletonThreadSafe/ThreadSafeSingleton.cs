@@ -8,7 +8,7 @@ namespace GoF_CSharp.Patterns.Singleton.SingletonThreadSafe
     /// </summary>
     public class ThreadSafeSingleton
     {
-        private static readonly object _lockObject = new object();
+        private static readonly object LockObject = new object();
 
         private static ThreadSafeSingleton _instance;
 
@@ -21,7 +21,7 @@ namespace GoF_CSharp.Patterns.Singleton.SingletonThreadSafe
 
         public static ThreadSafeSingleton GetInstance()
         {
-            lock (_lockObject)
+            lock (LockObject)
             {
                 if (_instance == null)
                 {
