@@ -48,6 +48,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\Singleton\Classic\SingletonClassic.cs" />
+    <Compile Include="Patterns\Singleton\SingletonThreadSafe\ThreadSafeSingleton.cs" />
+    <Compile Include="Patterns\Singleton\SingletonTest.cs" />
     <Compile Include="Patterns\Strategy\ActionStrategy\ColorActionStrategyHandler.cs" />
     <Compile Include="Patterns\Strategy\ClassicStrategy\BlueColorClassicStrategy.cs" />
     <Compile Include="Patterns\Strategy\ClassicStrategy\ColorClassicStrategyContext.cs" />
